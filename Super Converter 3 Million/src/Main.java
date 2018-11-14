@@ -15,6 +15,12 @@ public class Main
 				System.out.println("HELP ME PLEASE");
 				
 			}
+		private static void timeZoneConverter(){
+			System.out.println("What time zone would you like to convert FROM?");
+			System.out.println("What time zone would you like to convert TO?");
+			
+		}
+		private static void timeZoneLists
 		
 
 	}

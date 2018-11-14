@@ -6,8 +6,16 @@ public class Main
 			{
 				//okay, this is epic
 				
+				helpDan();
 				
-				// OKEI DUNHAM I HAVE A CONCURRING OPINION
+
 			}
+
+		private static void helpDan()
+			{
+				System.out.println("HELP ME PLEASE");
+				
+			}
+		
 
 	}

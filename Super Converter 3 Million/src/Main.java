@@ -7,8 +7,9 @@ public class Main
 			{
 				//okay, this is epic
 				
-				helpDan();
-				WeightConverter.weightConverter();
+//				helpDan();
+//				WeightConverter.weightConverter();
+				DistanceConverter.convertDistance();
 
 			}
 

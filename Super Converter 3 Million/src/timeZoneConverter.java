@@ -1,11 +1,30 @@
+import java.util.ArrayList;
+import java.util.Scanner;
 
 public class timeZoneConverter
 	{
-
+		static int userFrom;
+		static int userTime;
+		static int counter = 0;
+		static int fromTimeAdder;
+		static int toTimeAdder;
+		static String toTimeName;
+		static String fromTimeName;
+		static String timeZoneNameTemp;
 		public static void main(String[] args)
 			{
+			Scanner userInput = new Scanner(System.in);
 			System.out.println("What time zone would you like to convert FROM?");
+			timeZoneList();
+			userFrom = userInput.nextInt();
+			assigner();
+			System.out.println("What time is it there with no colons?");
+			userTime = userInput.nextInt(); 
 			System.out.println("What time zone would you like to convert TO?");
+			timeZoneList();
+			userFrom = userInput.nextInt();
+			assigner();
+			converter();
 			}
 		
 		private static void timeZoneList(){
@@ -29,16 +48,172 @@ public class timeZoneConverter
 			System.out.println("18) AEST (Australian Eastern Standard Time)"); //+10
 			System.out.println("19) VUT (Vanuatu Time)"); //+11
 			System.out.println("20) NZST (New Zealand Standard Time)"); //+12
-			System.out.println("21) CHAST (Chatham Standard Time)"); //+12:45
-			System.out.println("22) TOT (Tonga Time)"); //+13
-			System.out.println("23)  ()");
-			System.out.println("24)  ()");
-			System.out.println("25)  ()");
-			System.out.println("26)  ()");
-			System.out.println("27)  ()");
-			System.out.println("28)  ()");
-			System.out.println("29)  ()");
-			
+			System.out.println("21) CVT (Cape Verde Time)"); //-1
+			System.out.println("22) FNT (Fernando de Noronha Time)"); //-2
+			System.out.println("23) NDT (Newfoundland Daylight Time)"); //-2:30
+			System.out.println("24) BRT (Brasilia Time)"); //-3
+			System.out.println("25) NT (Newfoundland Time)"); //-3:30
+			System.out.println("26) AST (Atlantic Standard Time)"); //-4
+			System.out.println("27) EST (Eastern Standard Time)"); //-5
+			System.out.println("28) CST (Central Standard Time)"); //-6
+			System.out.println("29) MST (Mountain Standard Time)"); //-7
+			System.out.println("30) PST (Pacific Standard Time)"); //-8
+			System.out.println("31) AKST (Alaska Standard Time)"); //-9
+			System.out.println("32) TAHT (Tahiti Time)"); //-10
+			System.out.println("33) SST (Samoa Standard Time)"); //-11
 		}
-
+		private static void assigner(){
+			int assigner = 0;
+			switch(userFrom){
+				case 1:
+					assigner = 0;
+					timeZoneNameTemp = "GMT";
+					break;
+				case 2:
+					assigner = 100;
+					timeZoneNameTemp = "CET";
+					break;
+				case 3:
+					assigner = 200;
+					timeZoneNameTemp = "CAT";
+					break;
+				case 4:
+					assigner = 300;
+					timeZoneNameTemp = "AST";
+					break;
+				case 5:
+					assigner = 330;
+					timeZoneNameTemp = "IRST";
+					break;
+				case 6:
+					assigner = 400;
+					timeZoneNameTemp = "GST";
+					break;
+				case 7:
+					assigner = 430;
+					timeZoneNameTemp = "AFT";
+					break;
+				case 8:
+					assigner = 500;
+					timeZoneNameTemp = "PKT";
+					break;
+				case 9:
+					assigner = 530;
+					timeZoneNameTemp = "IST";
+					break;
+				case 10:
+					assigner = 545;
+					timeZoneNameTemp = "NPT";
+					break;
+				case 11:
+					assigner = 600;
+					timeZoneNameTemp = "BIOT";
+					break;
+				case 12:
+					assigner = 630;
+					timeZoneNameTemp = "MMT";
+					break;
+				case 13:
+					assigner = 700;
+					timeZoneNameTemp = "ICT";
+					break;
+				case 14:
+					assigner = 800;
+					timeZoneNameTemp = "CST";
+					break;
+				case 15:
+					assigner = 845;
+					timeZoneNameTemp = "ACWST";
+					break;
+				case 16:
+					assigner = 900;
+					timeZoneNameTemp = "JST";
+					break;
+				case 17:
+					assigner = 930;
+					timeZoneNameTemp = "ACST";
+					break;
+				case 18:
+					assigner = 1000;
+					timeZoneNameTemp = "AEST";
+					break;
+				case 19:
+					assigner = 1100;
+					timeZoneNameTemp = "VUT";
+					break;
+				case 20:
+					assigner = 1200;
+					timeZoneNameTemp = "NZST";
+					break;
+				case 21:
+					assigner = -100;
+					timeZoneNameTemp = "CVT";
+					break;
+				case 22:
+					assigner = -200;
+					timeZoneNameTemp = "FNT";
+					break;
+				case 23:
+					assigner = -230;
+					timeZoneNameTemp = "NDT";
+					break;
+				case 24:
+					assigner = -300;
+					timeZoneNameTemp = "BRT";
+					break;
+				case 25:
+					assigner = -330;
+					timeZoneNameTemp = "NT";
+					break;
+				case 26:
+					assigner = -400;
+					timeZoneNameTemp = "AST";
+					break;
+				case 27:
+					assigner = -500;
+					timeZoneNameTemp = "EST";
+					break;
+				case 28:
+					assigner = -600;
+					timeZoneNameTemp = "CST";
+					break;
+				case 29:
+					assigner = -700;
+					timeZoneNameTemp = "MST";
+					break;
+				case 30:
+					assigner = -800;
+					timeZoneNameTemp = "PST";
+					break;
+				case 31:
+					assigner = -900;
+					timeZoneNameTemp = "ASKT";
+					break;
+				case 32:
+					assigner = -1000;
+					timeZoneNameTemp = "TAHT";
+					break;
+				case 33:
+					assigner = -1100;
+					timeZoneNameTemp = "SST";
+					break;
+			}
+			if (counter == 0){
+				fromTimeAdder = assigner;
+				fromTimeName = timeZoneNameTemp;
+				counter++;
+			}
+			else {
+				toTimeName = timeZoneNameTemp;
+				toTimeAdder = assigner;
+			}
+		}
+		private static void converter(){
+			int converter = fromTimeAdder + toTimeAdder;
+			int userTimeFinal = userTime + converter;
+			if (userTimeFinal >= 1300){
+				userTimeFinal = userTimeFinal - 1200;
+			}
+			System.out.println(userTime + " in " + fromTimeName + " is " + userTimeFinal + " in " + toTimeName);
+		}
 	}

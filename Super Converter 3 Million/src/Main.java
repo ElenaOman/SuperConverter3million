@@ -5,20 +5,12 @@ public class Main
 
 		public static void main(String[] args)
 			{
-				//okay, this is epic
-				
-//				helpDan();
+          helpDan();
 //				WeightConverter.weightConverter();
-				DistanceConverter.convertDistance();
-
+				  DistanceConverter.convertDistance();
 			}
+	}							
 
-		private static void helpDan()
-			{
-				System.out.println("HELP ME PLEASE");
-				
-			}
-		
 //		public static void weightConverter()
 //		{
 //			String [ ] units = new String [3];
@@ -44,19 +36,3 @@ public class Main
 //			
 //			System.out.println("How many " + units[cunit-1] + " would you like to convert to " + units[newUnit-1] + "?");
 //			int num= userInput.nextInt();
-//			
-//			
-//			
-//			
-//			
-//		}
-		
-		
-		
-		private static void volumes()
-		{
-			System.out.println("Elena is doing volume conversions");
-		}
-		
-
-}

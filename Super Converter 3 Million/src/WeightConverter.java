@@ -13,6 +13,7 @@ public class WeightConverter
 				units [2] = "Grams";
 				
 				Scanner userInput = new Scanner(System.in);
+				Scanner userInput1 = new Scanner(System.in);
 			while (run==true)
 			{
 					
@@ -75,9 +76,10 @@ public class WeightConverter
 					}
 				
 				System.out.println("Would you like to make another conversion?");
-				String convertAgain = userInput.nextLine();
+				String convertAgain = userInput1.nextLine();
+				convertAgain.toLowerCase();
 
-				if (convertAgain.equals("true"))
+				if (convertAgain.equals("yes"))
 					{
 						run=true;
 					}

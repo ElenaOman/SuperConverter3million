@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class AngleConverter
 	{
-		public static void main(String[] args)
+		public static void convertAngles()
 		{
 			Scanner userInput = new Scanner(System.in);
 			
@@ -15,21 +15,17 @@ public class AngleConverter
 					System.out.println("Please input your angle.");
 					double degrees = userInput.nextDouble();
 					
-					System.out.println(degrees * .0174533);
+					System.out.println(degrees + " degrees is " +degrees * .0174533 + " radians.");
 				}
 			else if(choice == 2)
 				{
 					System.out.println("Please input your angle.");
-					double radians = userInput.nextDouble();
+					Double radians = userInput.nextDouble();
 					
-					System.out.println(radians * 57.2958);
+					System.out.println(radians + " radians is " + radians * 57.2958 + " degrees.");
 					
 					
-					//pls help.
-					//help
-					//help
-					//help again
-					//again please
+
 					
 					
 				}

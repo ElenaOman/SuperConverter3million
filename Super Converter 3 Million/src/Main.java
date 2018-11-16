@@ -43,11 +43,11 @@ public class Main
 	        		   break;
 	        		  
 	        	   case 4:
-	        		   // dan input your method for angles 
+	        		   AngleConverter.convertAngles();
 	        		   break;
 	        		   
 	        	   case 5:
-	        		   // dan input your method for speed 
+	        		   SpeedConverter.convertSpeed();
 	        		   break;
 	        		   
 	        	   case 6:

@@ -35,7 +35,7 @@ public class WeightConverter
 				
 				if (cunit==newUnit)
 					{
-						System.out.println("This is the same unit. " + num + " " + newUnit);
+						System.out.println("This is the same unit. " + num + " " + units[newUnit-1]);
 					}
 				
 				else

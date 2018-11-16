@@ -32,7 +32,7 @@ public class Main
 	        			 break;
 	        		
 	        	   case 2:
-	        		   // dunham input your method for time zones
+	        		   timeZoneConverter.runner();
 	        		   break;
 	        		   
 	        	   case 3:
@@ -48,7 +48,7 @@ public class Main
 	        		   break;
 	        		   
 	        	   case 6:
-	        		   // dunham input your method for currency 
+	        		   CurrencyConverter.runner();
 	        		   break;
 	        		   
 	        	   case 7:

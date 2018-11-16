@@ -18,8 +18,8 @@ public class DistanceConverter
 			
 			Scanner userInput = new Scanner(System.in);
 			Scanner userInput1 = new Scanner(System.in);
-			while (run==true)
-			{
+//			while (run==true)
+//			{
 					
 				
 				System.out.println("Please choose which unit you would like to convert from.");
@@ -112,22 +112,22 @@ public class DistanceConverter
 					}
 				
 				
-				System.out.println("Would you like to make another conversion?");
-				String convertAgain = userInput1.nextLine();
-				convertAgain.toLowerCase();
-
-				if (convertAgain.equals("yes"))
-					{
-						run=true;
-					}
-				else
-					{
-						run=false;
-					}
+//				System.out.println("Would you like to make another conversion?");
+//				String convertAgain = userInput1.nextLine();
+//				convertAgain.toLowerCase();
+//
+//				if (convertAgain.equals("yes"))
+//					{
+//						run=true;
+//					}
+//				else
+//					{
+//						run=false;
+//					}
 				
-				}
+//				}
 				
-				System.out.println("THANKS FOR CONVERTING!!!!!!!!!!!!!!");	
+//				System.out.println("THANKS FOR CONVERTING!!!!!!!!!!!!!!");	
 				
 			
 			

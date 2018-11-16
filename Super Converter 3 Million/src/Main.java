@@ -2,9 +2,10 @@ import java.util.Scanner;
 
 public class Main
 	{
-
+		static boolean run= true;
 		public static void main(String[] args)
 			{
+				Scanner userInput1 = new Scanner(System.in);
 				Scanner u = new Scanner(System.in);
 				String [] conversionType = new String [10];
 				conversionType [0] = "Weight";
@@ -20,6 +21,8 @@ public class Main
 							
 	           System.out.println("Welcome to the super converter 3 million!");
 	           System.out.println("Please choose which converter you would like to use.");
+	        while (run==true)
+	        {
 	           for (int i=0; i<conversionType.length; i++)
 	        	   {
 	        		   System.out.println((i+1)+ ") " + conversionType[i]);
@@ -66,37 +69,24 @@ public class Main
 	        	   case 10:
 	        		   //  Elena input your method for ?? 
 	        		   break;
-	        		  
-	        		   
-	        			   
+	        		  		   
 	           }
 	           
+	           System.out.println("Would you like to make another conversion?");
+				String convertAgain = userInput1.nextLine();
+				convertAgain.toLowerCase();
+
+				if (convertAgain.equals("yes"))
+					{
+						run=true;
+					}
+				else
+					{
+						run=false;
+					}
+	
+	        }
+	        System.out.println("THANKS FOR CONVERTING using our very own SUPERCONVERTER3MILLION!");
 	          
 			}
 	}							
-
-//		public static void weightConverter()
-//		{
-//			String [ ] units = new String [3];
-//			units [0] = "Pounds";
-//			units [1] = "Ounces";
-//			units [2] = "Grams";
-//			
-//			Scanner userInput = new Scanner(System.in);
-//			System.out.println("Please choose which unit you would like to convert from.");
-//			for (int i=0; i<units.length; i++)
-//				{
-//					System.out.println((i+1)+ " " + units[i]);
-//				}
-//			int cunit = userInput.nextInt();
-//			
-//			System.out.println("Please choose which unit you would like to convert to.");
-//			for (int i=0; i<units.length; i++)
-//				{
-//					System.out.println((i+1)+ " " + units[i]);
-//				}
-//			
-//			int newUnit= userInput.nextInt();
-//			
-//			System.out.println("How many " + units[cunit-1] + " would you like to convert to " + units[newUnit-1] + "?");
-//			int num= userInput.nextInt();

@@ -19,7 +19,7 @@ public class CurrencyConverter
 			currency = userInput.nextInt();
 			assigner();
 			System.out.println("How much do you want to convert?");
-			amount = userInput.nextInt();
+			amount = userInput.nextDouble();
 			System.out.println("What currency do you want to convert TO?");
 			currencyList();
 			currency = userInput.nextInt();

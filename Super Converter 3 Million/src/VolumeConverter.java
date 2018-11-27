@@ -80,6 +80,39 @@ public class VolumeConverter
 						double convert = num*0.264;
 						System.out.println("There are " + convert + " gallons in " + num + " liters.");
 					}
+				
+				
+				//Milliliters
+				if(initialUnit == 2 && finalUnit == 1)
+					{
+						double convert = num/1000;
+						System.out.println("There are " + convert + " liters in " + num + " milliliters.");
+					}
+				
+				else if(initialUnit == 2 && finalUnit == 3)
+					{
+						double convert = num/29.574;
+						System.out.println("There are " + convert + " ounces in " + num + " milliliters.");
+						
+					}
+				
+				else if(initialUnit == 2 && finalUnit == 4)
+					{
+						double convert = num/473.176;
+						System.out.println("There are " + convert + " pints in " + num + " milliliters.");
+					}
+				
+				else if(initialUnit == 2 && finalUnit == 5)
+					{
+						double convert = num/946.353;
+						System.out.println("There are " + convert + " quarts in " + num + " milliliters.");
+					}
+				
+				else if(initialUnit == 2 && finalUnit == 6)
+					{
+						double convert = num/3785.412;
+						System.out.println("There are " + convert + " gallons in " + num + " milliliters.");
+					}
 
 			}
 

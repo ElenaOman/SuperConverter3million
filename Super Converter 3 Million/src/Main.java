@@ -55,7 +55,7 @@ public class Main
 	        		   break;
 	        		   
 	        	   case 7:
-	        		   //  input your method for temperature 
+	        		   TemperatureConverter.convertTemperature();
 	        		   break;
 	        		   
 	        	   case 8:

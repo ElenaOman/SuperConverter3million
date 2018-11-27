@@ -25,7 +25,8 @@ public class VolumeConverter
 					}
 				int initialUnit = userInput.nextInt();
 				
-				//Final Unit
+				//Final Units
+			
 				System.out.println("Which unit are you converting to?");
 				for(int i = 0; i < unit.length; i++)
 					{

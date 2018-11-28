@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class VolumeConverter
 	{
 
-		public static void main(String[] args)
+		public static void volumeConverter()
 			{
 				
 				String [] unit = new String[6];

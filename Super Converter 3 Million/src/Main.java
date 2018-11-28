@@ -16,8 +16,8 @@ public class Main
 				conversionType [5] = "Currency";
 				conversionType [6] = "Temperature";
 				conversionType [7] = "Other1";
-				conversionType [8] = "Other2";
-				conversionType [9] = "Other3";
+				conversionType [8] = "Volume";
+				conversionType [9] = "Energy";
 							
 	           System.out.println("Welcome to the super converter 3 million!");
 	           System.out.println("Please choose which converter you would like to use.");
@@ -31,8 +31,8 @@ public class Main
 	           switch (conversionChoice)
 	           {
 	        	   case 1:
-	        		     WeightConverter.weightConverter();
-	        			 break;
+	        		    WeightConverter.weightConverter();
+	        		    break;
 	        		
 	        	   case 2:
 	        		   timeZoneConverter.runner();
@@ -63,11 +63,11 @@ public class Main
 	        		   break; 
 	        		   
 	        	   case 9:
-	        		   //  Elena input your method for ?? 
+	        		   VolumeConverter.volumeConverter(); 
 	        		   break;
 	        		  
 	        	   case 10:
-	        		   //  Elena input your method for ?? 
+	        		   energyConverter.energyConverter(); 
 	        		   break;
 	        		  		   
 	           }

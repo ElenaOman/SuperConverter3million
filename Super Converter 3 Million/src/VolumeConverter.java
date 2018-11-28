@@ -83,7 +83,7 @@ public class VolumeConverter
 				
 				
 				//Milliliters
-				if(initialUnit == 2 && finalUnit == 1)
+				else if(initialUnit == 2 && finalUnit == 1)
 					{
 						double convert = num/1000;
 						System.out.println("There are " + convert + " liters in " + num + " milliliters.");
@@ -113,7 +113,140 @@ public class VolumeConverter
 						double convert = num/3785.412;
 						System.out.println("There are " + convert + " gallons in " + num + " milliliters.");
 					}
-
+				
+				
+				//Ounces
+				else if(initialUnit == 3 && finalUnit == 1)
+					{
+						double convert = num/33.814;
+						System.out.println("There are " + convert + " liters in " + num + " ounces.");
+					}
+				
+				else if(initialUnit == 3 && finalUnit == 2)
+					{
+						double convert = num*29.574;
+						System.out.println("There are " + convert + " milliliters in " + num + " ounces.");
+						
+					}
+				
+				else if(initialUnit == 3 && finalUnit == 4)
+					{
+						double convert = num/16;
+						System.out.println("There are " + convert + " pints in " + num + " ounces.");
+					}
+				
+				else if(initialUnit == 3 && finalUnit == 5)
+					{
+						double convert = num/32;
+						System.out.println("There are " + convert + " quarts in " + num + " ounces.");
+					}
+				
+				else if(initialUnit == 3 && finalUnit == 6)
+					{
+						double convert = num/128;
+						System.out.println("There are " + convert + " gallons in " + num + " ounces.");
+					}
+				
+				
+				//Pints
+				else if(initialUnit == 4 && finalUnit == 1)
+					{
+						double convert = num/2.113;
+						System.out.println("There are " + convert + " liters in " + num + " pints.");
+					}
+				
+				else if(initialUnit == 4 && finalUnit == 2)
+					{
+						double convert = num*473.176;
+						System.out.println("There are " + convert + " milliliters in " + num + " pints.");
+						
+					}
+				
+				else if(initialUnit == 4 && finalUnit == 3)
+					{
+						double convert = num/16;
+						System.out.println("There are " + convert + " ounces in " + num + " pints.");
+					}
+				
+				else if(initialUnit == 4 && finalUnit == 5)
+					{
+						double convert = num/2;
+						System.out.println("There are " + convert + " quarts in " + num + " pints.");
+					}
+				
+				else if(initialUnit == 4 && finalUnit == 6)
+					{
+						double convert = num/8;
+						System.out.println("There are " + convert + " gallons in " + num + " pints.");
+					}
+				
+				
+				
+				//Quarts
+				else if(initialUnit == 5 && finalUnit == 1)
+					{
+						double convert = num/1.057;
+						System.out.println("There are " + convert + " liters in " + num + " quarts.");
+					}
+				
+				else if(initialUnit == 5 && finalUnit == 2)
+					{
+						double convert = num*946.353;
+						System.out.println("There are " + convert + " milliliters in " + num + " quarts.");
+						
+					}
+				
+				else if(initialUnit == 5 && finalUnit == 3)
+					{
+						double convert = num*32;
+						System.out.println("There are " + convert + " ounces in " + num + " quarts.");
+					}
+				
+				else if(initialUnit == 5 && finalUnit == 4)
+					{
+						double convert = num*2;
+						System.out.println("There are " + convert + " pints in " + num + " quarts.");
+					}
+				
+				else if(initialUnit == 5 && finalUnit == 6)
+					{
+						double convert = num/4;
+						System.out.println("There are " + convert + " gallons in " + num + " quarts.");
+					}
+				
+				
+				
+				//Gallons
+				else if(initialUnit == 6 && finalUnit == 1)
+					{
+						double convert = num*3.785;
+						System.out.println("There are " + convert + " liters in " + num + " gallons.");
+					}
+				
+				else if(initialUnit == 6 && finalUnit == 2)
+					{
+						double convert = num*3785.412;
+						System.out.println("There are " + convert + " milliliters in " + num + " gallons.");
+						
+					}
+				
+				else if(initialUnit == 6 && finalUnit == 3)
+					{
+						double convert = num*128;
+						System.out.println("There are " + convert + " ounces in " + num + " gallons.");
+					}
+				
+				else if(initialUnit == 6 && finalUnit == 4)
+					{
+						double convert = num*8;
+						System.out.println("There are " + convert + " pints in " + num + " gallons.");
+					}
+				
+				else if(initialUnit == 6 && finalUnit == 5)
+					{
+						double convert = num*4;
+						System.out.println("There are " + convert + " quarts in " + num + " gallons.");
+					}
 			}
 
 	}

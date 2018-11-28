@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class VolumeConverter
 	{
 
-		public static void main(String[] args)
+		public static void volumeConverter()
 			{
 				
 				String [] unit = new String[6];
@@ -83,7 +83,7 @@ public class VolumeConverter
 				
 				
 				//Milliliters
-				else if(initialUnit == 2 && finalUnit == 1)
+				if(initialUnit == 2 && finalUnit == 1)
 					{
 						double convert = num/1000;
 						System.out.println("There are " + convert + " liters in " + num + " milliliters.");
@@ -113,8 +113,7 @@ public class VolumeConverter
 						double convert = num/3785.412;
 						System.out.println("There are " + convert + " gallons in " + num + " milliliters.");
 					}
-				
-				
+      
 				//Ounces
 				else if(initialUnit == 3 && finalUnit == 1)
 					{
@@ -247,6 +246,7 @@ public class VolumeConverter
 						double convert = num*4;
 						System.out.println("There are " + convert + " quarts in " + num + " gallons.");
 					}
+
 			}
 
 	}

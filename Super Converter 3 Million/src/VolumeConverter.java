@@ -25,8 +25,7 @@ public class VolumeConverter
 					}
 				int initialUnit = userInput.nextInt();
 				
-				//Final Units
-			
+				//Final Unit
 				System.out.println("Which unit are you converting to?");
 				for(int i = 0; i < unit.length; i++)
 					{
@@ -34,8 +33,8 @@ public class VolumeConverter
 					}
 				int finalUnit = userInput.nextInt();
 				
-				//Conversions
 				
+				//Conversions
 				if(initialUnit == finalUnit)
 					{
 						System.out.println("How many " + unit[initialUnit - 1] + " would you like to convert to " + unit[finalUnit - 1] + "?" );
@@ -48,6 +47,7 @@ public class VolumeConverter
 					}
 				
 				double num = userInput.nextDouble();
+				
 				
 				//Liters
 				if(initialUnit == 1 && finalUnit == 2)

@@ -11,7 +11,10 @@ public class TemperatureConverter
 				double temp2 = 0;
 				
 				//asks for first temperature type
-				System.out.println("What's the type of your first temperature? (kelvin, celsius, fahrenheit)");
+				System.out.println("What's the type of your first temperature? ");
+				System.out.println("-kelvin");
+				System.out.println("-celsius");
+				System.out.println("-fahrenheit");
 				Scanner userInput = new Scanner(System.in);
 				type1 = userInput.nextLine();
 				

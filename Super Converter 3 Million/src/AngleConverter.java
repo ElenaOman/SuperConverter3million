@@ -9,14 +9,7 @@ public class AngleConverter
 		static String radiansExact;
 		static String radiansChoice;
 
-		
-		public static void piToDegrees()
-		{
-			
-		}
-		
-		
-		
+		//got it
 		public static void convertAngles()
 		{
 			Scanner userInput = new Scanner(System.in);
@@ -31,7 +24,7 @@ public class AngleConverter
 			
 			if(choice == 1)
 				{
-					System.out.println("Please input your angle.");
+					System.out.println("Please input your angle. ");
 					degrees = userInput.nextDouble();
 					if(degrees == 45)
 						{

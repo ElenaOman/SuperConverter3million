@@ -14,8 +14,7 @@ public class timeZoneConverter
 		static String timeZoneNameTemp;
 		static int userAMPM;
 		static String AMPM;
-		public static void main(String[] args)
-			{
+		static void runner(){
 			Scanner userInput = new Scanner(System.in);
 			System.out.println("What time zone would you like to convert FROM?");
 			timeZoneList();
@@ -38,7 +37,7 @@ public class timeZoneConverter
 			userFrom = userInput.nextInt();
 			assigner();
 			converter();
-			}
+		}
 		
 		private static void timeZoneList(){
 			System.out.println("1) GMT (Greenwich Mean Time)");

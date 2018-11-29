@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class energyConverter
 	{
 
-		public static void main(String[] args)
+		public static void energyConverter()
 			{
 		
 				String [] unit = new String[3];

@@ -1,4 +1,8 @@
+import java.awt.Rectangle;
 import java.util.Scanner;
+
+import javax.swing.plaf.synth.SynthSpinnerUI;
+import javax.xml.soap.Node;
 
 public class Main
 	{
@@ -15,9 +19,9 @@ public class Main
 				conversionType [4] = "Speed";
 				conversionType [5] = "Currency";
 				conversionType [6] = "Temperature";
-				conversionType [7] = "Other1";
-				conversionType [8] = "Other2";
-				conversionType [9] = "Other3";
+				conversionType [7] = "Time";
+				conversionType [8] = "Volume";
+				conversionType [9] = "Energy";
 							
 	           System.out.println("Welcome to the super converter 3 million!");
 	           System.out.println("Please choose which converter you would like to use.");
@@ -31,11 +35,11 @@ public class Main
 	           switch (conversionChoice)
 	           {
 	        	   case 1:
-	        		     WeightConverter.weightConverter();
-	        			 break;
+	        		    WeightConverter.weightConverter();
+	        		    break;
 	        		
 	        	   case 2:
-	        		   // dunham input your method for time zones
+	        		   timeZoneConverter.runner();
 	        		   break;
 	        		   
 	        	   case 3:
@@ -51,28 +55,29 @@ public class Main
 	        		   break;
 	        		   
 	        	   case 6:
-	        		   // dunham input your method for currency 
+	        		   CurrencyConverter.runner();
 	        		   break;
 	        		   
 	        	   case 7:
-	        		   //  input your method for temperature 
+	        		   TemperatureConverter.convertTemperature();
 	        		   break;
 	        		   
 	        	   case 8:
-	        		   //  input your method for ?? 
+	        		   TimeConverter.secondConverter();
 	        		   break; 
 	        		   
 	        	   case 9:
-	        		   //  Elena input your method for ?? 
+	        		   VolumeConverter.volumeConverter(); 
 	        		   break;
 	        		  
 	        	   case 10:
-	        		   //  Elena input your method for ?? 
+	        		   energyConverter.energyConverter(); 
 	        		   break;
 	        		  		   
 	           }
 	           
 	           System.out.println("Would you like to make another conversion?");
+	           System.out.println("Pleas input yes or no.");
 				String convertAgain = userInput1.nextLine();
 				convertAgain.toLowerCase();
 
@@ -86,7 +91,79 @@ public class Main
 					}
 	
 	        }
+	        
 	        System.out.println("THANKS FOR CONVERTING using our very own SUPERCONVERTER3MILLION!");
-	          
+	        delay();
+	        System.out.println();
+	        System.out.print("C");
+	        delay();
+	        System.out.print("r");
+	        delay();
+	        System.out.print("e");
+	        delay();
+	        System.out.print("d");
+	        delay();
+	        System.out.print("i");
+	        delay();
+	        System.out.print("t");
+	        delay();
+	        System.out.print("s");
+	        delay();
+	        System.out.println();
+	        System.out.println("BROUGHT TO YOU BY:");
+	        System.out.println();
+	        delay();
+	        delay();
+	        System.out.print("-Dunh");
+	        delay();
+	        System.out.print("am");
+	        delay();
+	        System.out.print(" or the group ");
+	        delay();
+	        System.out.print("leader");
+	        delay();
+	        delay();
+	        delay();
+	        System.out.println();
+	        System.out.print("-B");
+	        delay();
+	        System.out.print("o");
+	        delay();
+	        delay();
+	        System.out.println();
+	        System.out.print("-D");
+	        delay();
+	        System.out.print("a");
+	        delay();
+	        System.out.print("n");
+	        System.out.print("i");
+
+	        delay();
+	        System.out.println();
+	        System.out.print("-Cale");
+	        delay();
+	        System.out.print("b");
+	        delay();
+	        System.out.println();
+	        System.out.print("-E");
+	        delay();
+	        System.out.print("lena");
+	        
+			}
+
+
+		
+		
+		public static void delay()
+			{
+			try
+				{
+					Thread.sleep(1000);
+				}
+				catch (InterruptedException e)
+				{
+					e.printStackTrace();
+				}
+			
 			}
 	}							

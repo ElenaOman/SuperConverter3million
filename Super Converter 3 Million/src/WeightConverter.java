@@ -22,14 +22,14 @@ public class WeightConverter
 				System.out.println("Please choose which unit you would like to convert from.");
 				for (int i=0; i<units.length; i++)
 					{
-						System.out.println((i+1)+ " " + units[i]);
+						System.out.println((i+1)+ ") " + units[i]);
 					}
 				int cunit = userInput.nextInt();
 				
 				System.out.println("Please choose which unit you would like to convert to.");
 				for (int i=0; i<units.length; i++)
 					{
-						System.out.println((i+1)+ " " + units[i]);
+						System.out.println((i+1)+ ") " + units[i]);
 					}
 				
 				int newUnit= userInput.nextInt();

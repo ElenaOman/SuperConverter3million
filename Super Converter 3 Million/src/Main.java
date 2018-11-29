@@ -77,6 +77,7 @@ public class Main
 	           }
 	           
 	           System.out.println("Would you like to make another conversion?");
+	           System.out.println("Pleas input yes or no.");
 				String convertAgain = userInput1.nextLine();
 				convertAgain.toLowerCase();
 
@@ -136,12 +137,17 @@ public class Main
 	        delay();
 	        System.out.print("n");
 	        System.out.print("i");
+
+	        delay();
 	        System.out.println();
+	        System.out.print("-Cale");
 	        delay();
-	        System.out.println("-Caleb");
+	        System.out.print("b");
 	        delay();
+	        System.out.println();
+	        System.out.print("-E");
 	        delay();
-	        System.out.println("-Elena");
+	        System.out.print("lena");
 	        
 			}
 

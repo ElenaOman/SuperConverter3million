@@ -11,7 +11,7 @@ public class TemperatureConverter
 				double temp2 = 0;
 				
 				//asks for first temperature type
-				System.out.println("What's the type of your first temperature? (kelvin, celcuis, fahrenheit)");
+				System.out.println("What's the type of your first temperature? (kelvin, celsius, fahrenheit)");
 				Scanner userInput = new Scanner(System.in);
 				type1 = userInput.nextLine();
 				
@@ -28,7 +28,7 @@ public class TemperatureConverter
 				//kelvin converter
 				if (type1.equals("kelvin") || type1.equals("k") || type1.equals("K"))
 					{
-						if (type2.equals("celcuis") || type2.equals("c") || type2.equals("C"))
+						if (type2.equals("celsius") || type2.equals("c") || type2.equals("C"))
 							{
 								temp2 = temp1 - 273.15;
 							}
@@ -38,7 +38,7 @@ public class TemperatureConverter
 							}
 					}
 				//celcuis converter
-				else if (type1.equals("celcuis") || type1.equals("c") || type1.equals("C"))
+				else if (type1.equals("celsius") || type1.equals("c") || type1.equals("C"))
 					{
 						if (type2.equals("kelvin") || type2.equals("k") || type2.equals("K"))
 							{
@@ -57,7 +57,7 @@ public class TemperatureConverter
 							{
 								temp2 = (temp1 - 32) * 5/9 + 273.15;
 							}
-						else if (type2.equals("celcuis") || type2.equals("c") || type2.equals("C"))
+						else if (type2.equals("celsius") || type2.equals("c") || type2.equals("C"))
 							{
 								temp2 = (temp1 - 32) * 5/9;
 							}

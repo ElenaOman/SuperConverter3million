@@ -6,7 +6,9 @@ public class SpeedConverter
 			{
 				Scanner userInput = new Scanner(System.in);
 				
-				System.out.println("Would you like to convert 1)mph to kph 2)kph to mph ?");
+				System.out.println("What would you like to convert?");
+				System.out.println("1)MPH to KPH");
+				System.out.println("2)KPH to MPH");
 				int choice = userInput.nextInt();
 				
 				if(choice == 1)

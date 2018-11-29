@@ -15,7 +15,7 @@ public class Main
 				conversionType [4] = "Speed";
 				conversionType [5] = "Currency";
 				conversionType [6] = "Temperature";
-				conversionType [7] = "Other1";
+				conversionType [7] = "time";
 				conversionType [8] = "Other2";
 				conversionType [9] = "Other3";
 							
@@ -59,7 +59,7 @@ public class Main
 	        		   break;
 	        		   
 	        	   case 8:
-	        		   //  input your method for ?? 
+	        		   TimeConverter.secondConverter();
 	        		   break; 
 	        		   
 	        	   case 9:

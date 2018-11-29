@@ -17,7 +17,7 @@ public class Main
 				conversionType [4] = "Speed";
 				conversionType [5] = "Currency";
 				conversionType [6] = "Temperature";
-				conversionType [7] = "Other1";
+				conversionType [7] = "Time";
 				conversionType [8] = "Volume";
 				conversionType [9] = "Energy";
 							
@@ -61,7 +61,7 @@ public class Main
 	        		   break;
 	        		   
 	        	   case 8:
-	        		   //  Caleb input your method for ?? 
+	        		   TimeConverter.secondConverter();
 	        		   break; 
 	        		   
 	        	   case 9:
